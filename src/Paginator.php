@@ -2,6 +2,8 @@
 
 namespace linkphp\page;
 
+use Config;
+
 class Paginator
 {
 
@@ -89,6 +91,7 @@ class Paginator
     {
         return ($this->page - 1) * $this->show_page . ',' . ($this->show_page);
     }
+
     //显示首页
     protected function first()
     {
